@@ -1,0 +1,16 @@
+.nav-bottom{
+    /* background-image: url('https://i.pinimg.com/originals/3e/b9/b9/3eb9b9b4c46c868b340aca63f43e646e.jpg'); */
+    background-image: url('../../assets/bg.jpg');
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 450px;
+    width: 100%;
+    margin-top: -40px;
+    padding-top:100px ;
+    background-repeat: no-repeat;
+
+  }
+  .lef{
+    padding-bottom: 30px;
+  }
+  
+  
