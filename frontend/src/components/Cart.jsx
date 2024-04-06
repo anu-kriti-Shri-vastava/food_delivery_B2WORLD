@@ -26,7 +26,7 @@ const Cart = () => {
   const navigate = useNavigate();
 
   const checkout = async () => {
-    const res = await axios.get("http://localhost:5000/api/checkout");
+    const res = await axios.get("https://food-delivery-b2-world-6dxakx4tl-anukritis-projects.vercel.app/api/checkout");
     const { url } = await res.data;
     window.location.href = url;
   };

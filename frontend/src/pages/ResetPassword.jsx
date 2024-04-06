@@ -12,7 +12,7 @@ const ResetPassword = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.put("http://localhost:5000/api/reset-password", {
+      const res = await axios.put("https://food-delivery-b2-world-6dxakx4tl-anukritis-projects.vercel.app/api/reset-password", {
         email,
       });
       const data = await res.data;

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const NavList = ({ toggleNav, setToggleNav, auth }) => {
   const handleLogout = async () => {
-    const res = await axios.get("http://localhost:5000/api/logout");
+    const res = await axios.get("https://food-delivery-b2-world-6dxakx4tl-anukritis-projects.vercel.app/api/logout");
     const data = await res.data;
     toast.success(data.message);
     window.location.href = "/";
