@@ -13,7 +13,7 @@ const Success = () => {
   }, []);
 
   const clearCart = async () => {
-    const res = await axios.get("https://food-delivery-b2-world-6dxakx4tl-anukritis-projects.vercel.app/api/clear-cart");
+    const res = await axios.get("https://food-delivery-b2-world.vercel.app/api/clear-cart");
     const data = await res.data;
     toast.success(data.message);
   };

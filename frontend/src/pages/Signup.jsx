@@ -13,7 +13,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
 
-    const res = await axios.post(`https://food-delivery-b2-world-6dxakx4tl-anukritis-projects.vercel.app/api/signup`, {
+    const res = await axios.post(`https://food-delivery-b2-world.vercel.app/api/signup`, {
       name,
       email,
       password,

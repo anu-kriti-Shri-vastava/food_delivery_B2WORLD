@@ -20,7 +20,7 @@ const Navbar = () => {
   const user = useSelector((state) => state.auth.user);
 
   const getUser = async () => {
-    const res = await axios.get("https://food-delivery-b2-world-6dxakx4tl-anukritis-projects.vercel.app/api/get-user", {
+    const res = await axios.get("https://food-delivery-b2-world.vercel.app/api/get-user", {
       withCredentials: true,
     });
     const data = await res.data;

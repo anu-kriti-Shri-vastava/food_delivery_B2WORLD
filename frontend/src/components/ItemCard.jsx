@@ -14,7 +14,7 @@ const ItemCard = ({ id, name, quantity, price, image, _id }) => {
 
   const removeFromCart = async (id) => {
     const res = await axios.delete(
-      `https://food-delivery-b2-world-6dxakx4tl-anukritis-projects.vercel.app/api/remove-from-cart/${id}`
+      `https://food-delivery-b2-world.vercel.app/api/remove-from-cart/${id}`
     );
     const data = await res.data;
     toast.success(data.message);
@@ -23,7 +23,7 @@ const ItemCard = ({ id, name, quantity, price, image, _id }) => {
 
   const incrementQuantity = async (id) => {
     const res = await axios.put(
-      `https://food-delivery-b2-world-6dxakx4tl-anukritis-projects.vercel.app/api/increment-quantity/${id}`
+      `https://food-delivery-b2-world.vercel.app/api/increment-quantity/${id}`
     );
     const data = await res.data;
     getCart(user).then((data) => dispatch(setCart(data.cartItems)));
@@ -31,7 +31,7 @@ const ItemCard = ({ id, name, quantity, price, image, _id }) => {
 
   const decrementQuantity = async (id) => {
     const res = await axios.put(
-      `https://food-delivery-b2-world-6dxakx4tl-anukritis-projects.vercel.app/api/decrement-quantity/${id}`
+      `https://food-delivery-b2-world.vercel.app/api/decrement-quantity/${id}`
     );
     const data = await res.data;
     getCart(user).then((data) => dispatch(setCart(data.cartItems)));

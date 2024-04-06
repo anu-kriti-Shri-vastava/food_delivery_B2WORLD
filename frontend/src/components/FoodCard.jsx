@@ -12,7 +12,7 @@ const FoodCard = ({ id, name, price, desc, img, rating, handleToast }) => {
 
   const addToCart = async ({ id, name, img, price, rating, quantity }) => {
     const res = await axios.post(
-      `https://food-delivery-b2-world-6dxakx4tl-anukritis-projects.vercel.app/api/add-to-cart/${user._id}`,
+      `https://food-delivery-b2-world.vercel.app/api/add-to-cart/${user._id}`,
       {
         id,
         image: img,
