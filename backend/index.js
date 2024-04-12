@@ -8,16 +8,11 @@ const { connectDb } = require("./connection");
 const routes = require("./routes");
 
 connectDb();
-app.use(
-  cors({
-    origin: ["http://localhost:5173", "https://food-delivery-b2-world-se9g.vercel.app"],
-    credentials: true,
-  })
-);
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.setHeader('Access-Control-Allow-Origin', 'https://food-delivery-b2-world-se9g.vercel.app');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  res.setHeader('Access-Control-Allow-Credentials', true);
   next();
 });
 
