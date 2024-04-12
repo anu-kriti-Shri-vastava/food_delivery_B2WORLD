@@ -199,8 +199,8 @@ const checkout = async (req, res) => {
           quantity: item.quantity,
         };
       }),
-      success_url: "http://localhost:5173/success",
-      cancel_url: "http://localhost:5173/",
+      success_url: "https://food-delivery-b2-world-se9g.vercel.app/success",
+      cancel_url: "https://food-delivery-b2-world-se9g.vercel.app/",
     });
 
     res.json({ url: session.url });
