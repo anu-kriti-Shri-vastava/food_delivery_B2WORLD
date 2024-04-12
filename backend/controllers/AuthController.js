@@ -28,7 +28,7 @@ const signup = async (req, res) => {
       .status(201)
       .json({ success: true, message: "Signup Successful" });
   } catch (error) {
-    return res.stauts(500).json({ success: false, message: error.message });
+    return res.status(500).json({ success: false, message: error.message });
   }
 };
 
